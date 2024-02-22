@@ -5,7 +5,7 @@
   
     }
     .header {
-        border: 2px solid rgb(0, 0, 0);
+        border: 1px solid rgb(0, 0, 0);
         text-align: center;
         padding: 4rem;
         display: flex;
@@ -72,14 +72,7 @@
     }
 
     .spacermain{
-        border: 1px solid black;
-        border-left: 2px solid black;
-        border-right: 2px solid black;
-        text-align: center;
-        border-top: none;
-        border-bottom: none;
-        padding: 0.001rem;
-        
+        display: none;   
     }
     .socials ul {
         list-style: none;
@@ -120,9 +113,9 @@
         color: black;
     }
     .main {
-        border: 2px solid rgb(0, 0, 0);
+        border: 1px solid rgb(0, 0, 0);
         text-align: center;
-        padding: 4rem;
+        padding: 0.200rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -132,17 +125,18 @@
   }
   .main ul{
     position: relative;
-  
-    text-align: center;
+   text-align: center;
     padding: -5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    bottom: 4.8rem;
+    bottom: 5.8rem;
     
 }
 .main ul li {
     display: flex;
+    position: relative;
+  
 }
 
 
@@ -151,11 +145,11 @@
     position: relative;
     padding: 2vw 2vw;
     right: 1.3rem;
-    margin: 0 auto;
-    border: 2px solid black;
-    width: 4vw;
+    margin: 1px;
+    border: 0.1px solid black;
+    width: 2vw;
     z-index: 1;
-    
+
 }
 .main ul img:hover{
     transform: scale(1.1);
@@ -196,7 +190,7 @@
  }
   .art{
   
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     text-align: center;
     padding: 4rem;
     display: flex;
@@ -211,7 +205,7 @@
 
   }
   .date{
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     text-align: center;
     padding: 1rem 1rem;
     display: flex;
@@ -256,7 +250,7 @@
     color: black;
 }
 .shop{
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     text-align: center;
     padding: 9rem;
     display: flex;
@@ -292,7 +286,7 @@
     font-size: 1rem
 }
 .services{
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     text-align: center;
     padding: 1rem 4rem;
     display: flex;
@@ -355,7 +349,7 @@
   
 }
 .contact {
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     text-align: center;
     padding: 4rem;
     display: flex;
@@ -399,7 +393,7 @@
     width: 70%;
     padding: 0.7rem;
     margin-bottom: 1.5rem;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     border-radius: 5px;
 }
 
@@ -464,7 +458,7 @@
 
 .shop .shop-button{
     
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     text-align: center;
     padding: 1rem 1rem;
     display: flex;
@@ -520,7 +514,7 @@
     border-bottom: none;
   }
   .spacershop{
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     text-align: center;
     padding:0.5rem 4rem;
     display: flex;
@@ -530,7 +524,7 @@
     border-top: none;
   }
  .spacercontact{
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     text-align: center;
     padding:0.5rem 4rem;
     display: flex;
@@ -539,7 +533,7 @@
     border-top: none;
  }
  .spacerservices{
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     text-align: center;
     padding:0.5rem 4rem;
     display: flex;
@@ -587,9 +581,8 @@
   
     .language-buttons {
     position: relative;
-    top: 5vw;
       text-align: center;
-      margin-top: 10px; /* Adjust the margin as needed */
+      margin-top: -40px; /* Adjust the margin as needed */
     }
   
     .language-buttons ul {
@@ -626,30 +619,34 @@
         transform: scale(1.1);
       }
       #englishContent {
-        
-        position: relative;
-        max-width: 100%;
-        left: 0.250rem;
-        bottom: 4rem;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      }
-      
-      #englishContent h1 {
-        top: 15vw;
-      }
-      
+        font-weight: lighter;
+        text-align: center; /* Center the text horizontally */
+        padding: 1rem; /* Add padding for better spacing */
+        margin: 0; /* Remove default margin */
+    }
+    
+    #englishContent h1 {
+        font-size: 2.4vw; /* Adjust font size as needed */
+        margin: 0;
+        margin: auto; /* Center the h1 element horizontally */
+    }
+    
       #japaneseContent{
-        position: relative;
-        max-width: 100%;
-        left: 0.250rem;
-        bottom: 4rem;
-        font-weight: 100;
-        font-family: 'Times New Roman', Times, serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: lighter;
+        text-align: center; /* Center the text horizontally */
+        padding: 1rem; /* Add padding for better spacing */
+        margin: 0; /* Remove default margin */
+    }
 
 
       }
       #japaneseContent h1{
-        top: 16vw;
+        font-size: 2.4vw; /* Adjust font size as needed */
+        margin: 0;
+        margin: auto; /* Center the h1 element horizontally */
+       
 
       }
       .shopping {
@@ -720,4 +717,5 @@
 .form-container button:hover {
     background-color: #555;
 }
-}
+
+
