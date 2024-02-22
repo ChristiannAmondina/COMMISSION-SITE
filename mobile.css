@@ -1,0 +1,723 @@
+@media only screen and (max-width: 1308px) {
+    *
+    body{
+        background-color: rgb(241, 231, 214);
+  
+    }
+    .header {
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+
+    .header h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        font-size: 6vw;
+       
+    }
+    .header h3 {
+        font-size: 2.5vw;
+        display: flex;
+        flex-direction: row; /* Change from column to row */
+    }
+   
+      
+    .burger-menu {
+        font-weight: bold;
+        right: 1rem;
+        font-size: 2rem;
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 1rem;
+    }
+   
+    .mobile-nav {
+    
+        position: fixed;
+        top: 0;
+        left: -100%; /* Initially hide the navigation off-screen */
+        width: 50%; /* Adjust the width as needed */
+        height: 100%;
+        background-color: #fff; /* Adjust the background color as needed */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for better visibility */
+        transition: left 0.6s ease; /* Use transition for sliding effect */
+        z-index: 2;
+        text-decoration: none;
+        border-right: 1px solid black;
+      
+
+    }
+    .headerr{
+   
+        border: 1px solid black;
+        
+    }
+    .headerr h1{
+        font-size: 2vw;
+        text-align: center;
+    }
+    .headerr h3 {
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .mobile-nav.show {
+        left: 0; /* Move the navigation into view */
+    }
+
+    .spacermain{
+        border: 1px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        text-align: center;
+        border-top: none;
+        border-bottom: none;
+        padding: 0.001rem;
+        
+    }
+    .socials ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        top: 5rem;
+    }
+
+    .socials ul li {
+        padding: 0.200vw;
+        margin-left: 1rem;
+       
+    }
+
+    .socials ul li a {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: none;
+        color: #000000; /* Adjust the text color as needed */
+        font-size: 3vw;
+        font-weight: bold;
+    }
+    .socials ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        
+    }
+
+    .socials li {
+        padding: 10px 20px;
+    }
+
+    /* Removing default link styling */
+    .socials a {
+        text-decoration: none;
+        color: black;
+    }
+    .main {
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+       
+  }
+  .main ul{
+    position: relative;
+  
+    text-align: center;
+    padding: -5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 4.8rem;
+    
+}
+.main ul li {
+    display: flex;
+}
+
+
+.main ul img{
+   background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    padding: 2vw 2vw;
+    right: 1.3rem;
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 4vw;
+    z-index: 1;
+    
+}
+.main ul img:hover{
+    transform: scale(1.1);
+    border: 3px solid white;
+    background-color: grey;
+  }
+  .main h1 {
+    
+   position: relative;
+    font-size: 1rem;
+    margin-top: -2%;
+  }
+  .main img{
+    position: relative;
+     width: 50%;
+     height: auto ;
+     margin-top: -20%;
+     cursor: pointer;
+
+
+  }
+  .main img:hover{
+    transform: scale(1.030);
+  }
+  
+  .main h1 {
+    
+   position: relative;
+    font-size: 3vw;
+    padding: 2rem;
+    margin-top: -20%;
+  }
+  .main img{
+    width: 100%;
+    height: auto ;
+    margin-top: -20%;
+
+ }
+  .art{
+  
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .art h1{
+    position: relative;
+    font-size: 10px;
+    border: 2px solid black;
+    padding: 2rem;
+
+  }
+  .date{
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: none;
+    border-bottom: none;
+   
+
+}
+
+.art ul{
+    position: relative;
+    justify-content: center;
+        list-style: none;
+        display: flex;
+        text-align: center;
+        padding: 0rem 0rem;
+        width: 50%;
+        border-bottom: none;
+        border-top: none;
+        margin: 0 auto;
+}
+.art ul li{
+    border: 1px solid black;
+    font-weight: bold;
+    position: relative;
+    padding: 1.4vw 5vw;
+    text-decoration: none;
+    transition: transform 0.1s ease;
+    background-color: #ffff;
+   
+}
+.art ul li:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+.art a {
+    font-size: 3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.shop{
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.art .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center images horizontally */
+    padding-top: 2rem;
+}
+
+.art .gallery img {
+    width: calc(25% - 4px); /* Adjust the width based on your preference */
+    max-width: 100%; /* Make sure images don't exceed their container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 2px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border: 2px solid black;
+}
+.art .gallery img:hover {
+    transform: scale(1.1);
+}
+.art .gallery img[data-year="2023"] {
+    display: none;
+}
+.shop h1{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    font-size: 1rem
+}
+.services{
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: none;
+
+    
+
+}
+.services ul{
+    justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+        display: flex;
+        text-align: center;
+        padding:10rem 0rem ;
+        width: 100%;
+        height: auto;
+        border-bottom: none;
+        margin: 0 auto;
+}
+.services ul li{
+    border: 1px solid black;
+    font-weight: bold;
+    position: relative;
+    margin: 1rem;
+    padding: 15vw 0rem;
+    text-decoration: none;
+    transition: transform 0.1s ease;
+    background-color: #ffff;
+    width: calc(50% - 10px); /* Adjust the width based on your preference */
+    max-width: 100%; /* Make sure images don't exceed their container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    align-items: center;
+    justify-content: center;
+
+}
+
+.services ul li:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.services a {
+    width: 100%;
+    text-align: center;
+    font-size: 2vw; /* Base font size, adjust as needed */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.contact ul{
+
+    width: 50vw;
+    margin: 0 auto;
+  
+}
+.contact {
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contact h1 {
+    font-size: 5vw;
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 2vw;
+}
+
+.contact p {
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.contact form {
+    border: 2px solid black;
+    background: transparent;
+    padding: 01rem;
+    width: 96%;
+    height: 100%;
+
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #040b0e;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 70%;
+    padding: 0.7rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.contact button {
+    width: 65%;
+    background-color: #007bff;
+    color: white;
+    height: 40px;
+    padding: 0.5rem 0; /* Adjust the left and right padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.contact button:hover {
+    background-color: #ff3a6b;
+}
+
+/* Placeholder text styles */
+.contact input::placeholder,
+.contact textarea::placeholder {
+    font-style: italic;
+    color: #ff0000;
+}
+
+/* Centered text within the form */
+.contact form p {
+    text-align: center;
+}
+
+.contact-descp p {
+
+    position: relative;
+    color: white;
+    font-size: 2vw;
+    left: 800px;
+    bottom:  500px;
+    max-width: 440px;
+}
+
+.footer {
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: none;
+}
+.footer h1{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    font-size: 1rem
+    
+}
+.shop {
+    padding: 15rem 4rem;
+}
+
+.shop .shop-button{
+    
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin-top: -14rem;
+    
+
+}
+.shop .shop-button ul{
+    position: relative;
+    justify-content: center;
+        list-style: none;
+        display: flex;
+        text-align: center;
+        padding: 0rem 0rem;
+        width: 50%;
+        border-bottom: none;
+        border-top: none;
+        margin: 0 auto;
+        
+}
+.shop .shop-button li {
+    border: 1px solid black;
+    font-weight: bold;
+    position: relative;
+    padding: 1.4vw 5vw;
+    text-decoration: none;
+    transition: transform 0.1s ease;
+    background-color: #ffff;
+    
+   
+}
+.shop .shop-button li:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+.shop .shop-button a {
+    font-size: 3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.spacer{
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    padding:0.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: none;
+    border-bottom: none;
+  }
+  .spacershop{
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    padding:0.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+    border-top: none;
+  }
+ .spacercontact{
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    padding:0.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: none;
+ }
+ .spacerservices{
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    padding:0.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: none;
+ }
+
+ .image-preview-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  #previewImage {
+    width: 95vmin; /* Use vmin to ensure the image fits within the viewport */
+    height: 95vmin; /* Use the same value as width to maintain a 1:1 aspect ratio */
+    max-width: none; /* Remove the maximum width constraint */
+    max-height: none; /* Remove the maximum height constraint */
+     margin: 0 auto;
+    display: block;
+    border: 2px solid black;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  
+    .language-buttons {
+    position: relative;
+    top: 5vw;
+      text-align: center;
+      margin-top: 10px; /* Adjust the margin as needed */
+    }
+  
+    .language-buttons ul {
+      list-style: none;
+      padding: 0;
+      max-width: 50vw; /* Set a maximum width for the container */
+      margin: 0 auto; /* Center the container */
+      padding-left: 15px;
+    }
+    
+    .language-buttons li {
+        display: inline-block;
+        margin-right: 10px; /* Adjust the margin between buttons as needed */
+        cursor: pointer;
+        border: 1px solid #110606; /* Add border for a button-like appearance */
+        padding: 5px 10px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 3vw;
+    }
+  
+    .language-buttons li:hover {
+      background-color: #eee; /* Change background color on hover */
+    }
+    #interactiveIcon {
+        bottom: 1vw;
+        max-width: 60%;
+        padding: 5px;
+        border-radius: 10px;
+      
+        transition: transform 0.3s ease-in-out;
+      }
+     
+      #interactiveIcon:hover {
+        transform: scale(1.1);
+      }
+      #englishContent {
+        
+        position: relative;
+        max-width: 100%;
+        left: 0.250rem;
+        bottom: 4rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      
+      #englishContent h1 {
+        top: 15vw;
+      }
+      
+      #japaneseContent{
+        position: relative;
+        max-width: 100%;
+        left: 0.250rem;
+        bottom: 4rem;
+        font-weight: 100;
+        font-family: 'Times New Roman', Times, serif;
+
+
+      }
+      #japaneseContent h1{
+        top: 16vw;
+
+      }
+      .shopping {
+        position: fixed;
+        right: 16px;
+        top: 60px;
+      }
+      
+      .shopping img {
+        width: 30px; /* Set a fixed width for the image */
+        height: 30px; /* Set a fixed height for the image */
+        transition: transform 0.3s ease-in-out; /* Add a smooth transition on hover */
+      }
+      
+      .shopping img:hover {
+        transform: scale(1.1); /* Scale the image slightly on hover */
+      }
+   /* Default styles for form containers */
+/* Default styles for form containers */
+.form-container {
+    z-index: 2;
+    font-size: 3vw; /* Set the desired font size for mobile */
+    position: fixed; /* Change from absolute to relative */
+    background-color: white;
+    color: black;
+    padding: 20px; /* Adjust padding for mobile */
+    border: 2px solid black;
+    width: 80%; /* Adjust width for mobile */
+    max-width: 400px; /* Set the maximum width */
+    height: auto; /* Adjust height for mobile */
+    display: none;
+    top: 150px; /* Adjust the value to move it freely */
+    margin: 0 auto; /* Center horizontally */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form-container button {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 1em; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 1em; /* Adjust top position as needed */
+    left: 1em; /* Adjust left position as needed */
+}
+
+.form-container button:hover {
+    background-color: #555;
+}
+
+.form-section {
+    text-align: center;
+}
+
+ .form-container button {
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-top: -0.200em;
+    margin-left: -0.100em;
+    font-size: 1.4vw;
+}
+
+.form-container button:hover {
+    background-color: #555;
+}
+}
