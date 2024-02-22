@@ -6,6 +6,7 @@
     }
     .header {
         border: 1px solid rgb(0, 0, 0);
+        border-bottom: none;
         text-align: center;
         padding: 4rem;
         display: flex;
@@ -113,6 +114,7 @@
         color: black;
     }
     .main {
+        border-top: none ;
         border: 1px solid rgb(0, 0, 0);
         text-align: center;
         padding: 0.200rem;
@@ -192,7 +194,8 @@
   
     border: 1px solid rgb(0, 0, 0);
     text-align: center;
-    padding: 4rem;
+    padding: 10px;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,7 +268,7 @@
 }
 
 .art .gallery img {
-    width: calc(25% - 4px); /* Adjust the width based on your preference */
+    width: calc(20% - 4px); /* Adjust the width based on your preference */
     max-width: 100%; /* Make sure images don't exceed their container */
     height: auto; /* Maintain aspect ratio */
     margin: 2px;
@@ -504,9 +507,9 @@
     color: black;
 }
 .spacer{
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     text-align: center;
-    padding:0.5rem 4rem;
+    padding: -0em 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -516,7 +519,7 @@
   .spacershop{
     border: 1px solid rgb(0, 0, 0);
     text-align: center;
-    padding:0.5rem 4rem;
+    padding:0rem 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -526,7 +529,7 @@
  .spacercontact{
     border: 1px solid rgb(0, 0, 0);
     text-align: center;
-    padding:0.5rem 4rem;
+    padding:0rem 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -535,7 +538,7 @@
  .spacerservices{
     border: 1px solid rgb(0, 0, 0);
     text-align: center;
-    padding:0.5rem 4rem;
+    padding:0rem 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
