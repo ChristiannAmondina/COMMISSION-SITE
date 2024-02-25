@@ -100,7 +100,7 @@
     text-decoration: none;
     transition: transform 0.1s ease;
     background-color: #ffff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.621); /* Adjust values as needed */
+   
 }
 
 .socials li:hover {
@@ -249,7 +249,6 @@
     cursor: pointer;
     margin: 10px;
     margin-right: 10px; /* Adjust spacing between li elements */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.726); /* Adjust values as needed */
     
     
     
@@ -345,14 +344,11 @@
     margin: 2px;
     transition: transform 0.3s ease;
     border: 1.3px solid black;
-  
-    
     
 }
 .art .gallery img:hover {
     transform: scale(1.1);
     border: 2px solid white;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.726); /* Adjust values as needed */
 }
 
 .art .gallery img[data-year="2023"] {
@@ -409,7 +405,6 @@
     background-color: #ffff;
     cursor: pointer;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.726); /* Adjust values as needed */
    
 }
 #PatreonBtn{

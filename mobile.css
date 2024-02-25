@@ -211,7 +211,17 @@
     margin-top: -20%;
 
  }
+ .about{
+    
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 10rem 1rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+  }
 
   .about{
     position: relative;
@@ -253,7 +263,6 @@
     cursor: pointer;
     margin: 5px;
     margin-right: 10px; /* Adjust spacing between li elements */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.726); /* Adjust values as needed */
 
     
   }
@@ -423,7 +432,7 @@
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.726); /* Adjust values as needed */
+    
 
 }
 
