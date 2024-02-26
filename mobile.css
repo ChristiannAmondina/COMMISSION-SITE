@@ -459,7 +459,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%; /* Adjust as needed */
-    height: 52%;
+    height: 100%;
     max-width: 700px; /* Maximum width */
     background-color: rgb(255, 255, 255); /* Semi-transparent white background */
     z-index: 1; /* Ensure the form appears above other elements */
@@ -492,7 +492,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80%; /* Adjust as needed */
-        height: 52%;
+        height: 100%;
         max-width: 700px; /* Maximum width */
         background-color: rgb(255, 255, 255); /* Semi-transparent white background */
         z-index: 1; /* Ensure the form appears above other elements */
