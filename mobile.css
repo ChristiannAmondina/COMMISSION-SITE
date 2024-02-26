@@ -275,6 +275,7 @@
     color: black; /* Set the text color to black */
 }
   #aboutimage{
+    content: url(static\ about\ me.gif);
     position: relative;
     margin-top: 0.200rem;
     width: 45vw;
@@ -286,11 +287,10 @@
   #aboutimage:hover{
     padding: 10.3px;
     top: 1rem;
-    width: 38vw;
-    content: url('aboutme\ image\ hover.gif'); /* Change the image source to your new image */
+    width: 40vw;
+    content: url('hover\ about\ me.gif'); /* Change the image source to your new image */
     background: url('1.mp3') no-repeat; /* Change the sound file path */
     cursor: pointer;
-
   }
   .art{
   
@@ -1033,5 +1033,35 @@ text-align: center;
 .closeButton:hover {
     background-color: #82acff; /* Darker red on hover, adjust as needed */
 }
+#aboutMeForm p{
+    justify-content: center;
+    font-size: 2.4vw;
+    text-align: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#aboutWorksForm p{
+    justify-content: center;
+    font-size: 2.4vw;
+    text-align: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+#perspectiveGoalsForm p{
+    justify-content: center;
+    font-size: 2.4vw;
+    text-align: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#aboutWebsiteForm p{
+    justify-content: center;
+    font-size: 2.4vw;
+    text-align: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
  }
 
