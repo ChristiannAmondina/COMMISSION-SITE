@@ -308,7 +308,7 @@
         cursor: pointer;
 }
 .art ul li{
-    border: 1.3px solid black;
+    border: 3px solid black;
     font-weight: bold;
     position: relative;
     padding: 10px 20px;
