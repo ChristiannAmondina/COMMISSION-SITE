@@ -1,11 +1,12 @@
 @media only screen and (max-width: 1308px) {
     *
     body{
-        background-color: rgb(241, 231, 214);
+        background: url(surge.gif);
   
     }
     .header {
         border: 1px solid rgb(0, 0, 0);
+        background-color: rgb(47, 60, 76);
         border-bottom: none;
         text-align: center;
         padding: 4rem;
@@ -35,16 +36,19 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         margin: 0;
         font-size: 6vw;
+        color: white;
        
     }
     .header h3 {
         font-size: 2.5vw;
         display: flex;
         flex-direction: row; /* Change from column to row */
+        color: white;
     }
    
       
     .burger-menu {
+        color: white;
         font-weight: bold;
         right: 1rem;
         font-size: 2rem;
@@ -66,23 +70,27 @@
         left: -100%; /* Initially hide the navigation off-screen */
         width: 50%; /* Adjust the width as needed */
         height: 100%;
-        background-color: #fff; /* Adjust the background color as needed */
+        background-color: rgb(47, 60, 76);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for better visibility */
         transition: left 0.6s ease; /* Use transition for sliding effect */
         z-index: 2;
         text-decoration: none;
         border-right: 1px solid black;
+        color: white;
       
 
     }
-    .headerr{
+    .header{
    
-        border: 1px solid black;
+        border-left: 0.6vw solid rgb(135, 141, 180);
+        border-right: 0.6vw solid rgb(135, 141, 180);
+        border-top: 0.6vw solid rgb(135, 141, 180);
         
     }
     .headerr h1{
         font-size: 2vw;
         text-align: center;
+        
     }
     .headerr h3 {
         font-size: 2vw;
@@ -94,6 +102,7 @@
     }
 
     .spacermain{
+        
         display: none;   
     }
     .socials ul {
@@ -113,7 +122,7 @@
     .socials ul li a {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-decoration: none;
-        color: #000000; /* Adjust the text color as needed */
+        color: #f2e9e9; /* Adjust the text color as needed */
         font-size: 3vw;
         font-weight: bold;
     }
@@ -137,12 +146,14 @@
     .main {
         border-top: none ;
         border: 1px solid rgb(0, 0, 0);
+        border-left:  0.6vw solid rgb(135, 141, 180);
+        border-right:  0.6vw solid rgb(135, 141, 180);
         text-align: center;
         padding: 0.200rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        background-color: rgba(46, 55, 69, 0.574);
         
        
   }
@@ -154,6 +165,7 @@
     flex-direction: row;
     align-items: center;
     bottom: 5.8rem;
+    columns: inherit;
     
 }
 .main ul li {
@@ -164,7 +176,7 @@
 
 
 .main ul img{
-   background-color: rgba(255, 255, 255, 0);
+   background-color: rgba(231, 235, 240, 0.922);
     position: relative;
     padding: 2vw 2vw;
     right: 1.3rem;
@@ -211,27 +223,20 @@
     margin-top: -20%;
 
  }
- .about{
-    
-    border: 1px solid rgb(0, 0, 0);
-    text-align: center;
-    padding: 10rem 1rem;
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-  }
 
   .about{
     position: relative;
     border-top: none ;
     border: 1px solid rgb(0, 0, 0);
+    border-left: 0.1px solid rgb(135, 141, 180);
+    border-right: 0.1px solid rgb(135, 141, 180);
     text-align: center;
     padding: 0.200rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(46, 55, 69, 0.574);
     
 
   }
@@ -253,10 +258,11 @@
     
 }
 .aboutbuttons ul li{
-    background-color: #eee;
+    background-color: rgb(34, 44, 56);
     font-size: 1.6vw;
+    color: rgb(222, 219, 213);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: 0.090px solid black;
+    border: 0.090px solid rgb(219, 210, 210);
     border-radius: 3px;
     padding: 5px;
     transition: transform 0.1s ease-in-out;
@@ -272,7 +278,7 @@
   }
   .aboutbuttons ul li a {
     text-decoration: none; /* Remove underline from links */
-    color: black; /* Set the text color to black */
+    color: rgb(217, 209, 209); /* Set the text color to black */
 }
   #aboutimage{
     content: url(static\ about\ me.gif);
@@ -293,14 +299,17 @@
     cursor: pointer;
   }
   .art{
-  
+    text-decoration: none;
     border: 1px solid rgb(0, 0, 0);
+    border-left:  0.6vw solid rgb(135, 141, 180);
+    border-right:  0.6vw solid rgb(135, 141, 180);
     text-align: center;
     padding: 10px;
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(46, 55, 69, 0.574);
   }
   .art h1{
     position: relative;
@@ -332,16 +341,17 @@
         width: 50%;
         border-bottom: none;
         border-top: none;
+        text-decoration: none;
         margin: 0 auto;
 }
 .art ul li{
-    border: 0.010px solid black;
+    border: 0.010px solid rgb(222, 216, 216);
     font-weight: bold;
     position: relative;
     padding: 1.4vw 5vw;
     text-decoration: none;
     transition: transform 0.1s ease;
-    background-color: #ffff;
+     background-color: rgb(34, 44, 56);
    
 }
 .art ul li:hover {
@@ -352,7 +362,7 @@
     font-size: 3vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    color: black;
+    color: rgb(231, 225, 225);
 }
 .shop{
     border: 1px solid rgb(0, 0, 0);
@@ -360,6 +370,7 @@
     padding: 9rem;
     display: flex;
     flex-direction: column;
+    background-color: rgba(46, 55, 69, 0.574);
     align-items: center;
 }
 .art .gallery {
@@ -376,7 +387,8 @@
     margin: 2px;
     transition: transform 0.3s ease;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    border: 0.010px solid black;
+    border: 1px solid rgb(221, 212, 212);
+    border-radius: 4px;
 }
 .art .gallery img:hover {
     transform: scale(1.1);
@@ -391,8 +403,11 @@
     font-size: 1rem
 }
 .services{
+    background-color: rgba(46, 55, 69, 0.574);
     position: relative;
     border: 1px solid rgb(0, 0, 0);
+    border-left:  0.6vw solid rgb(135, 141, 180);
+    border-right:  0.6vw solid rgb(135, 141, 180);
     padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
@@ -416,7 +431,7 @@
        
 }
 .services ul li{
-    border: 0.2px solid black;
+    border: 0.2px solid rgb(201, 196, 196);
     border-radius: 5px;
     font-weight: bold;
     position: relative;
@@ -424,7 +439,7 @@
     padding: 10vw 0rem;
     text-decoration: none;
     transition: transform 0.1s ease;
-    background-color: #ffff;
+    background-color: rgb(34, 44, 56);
     width: calc(50% - 10px); /* Adjust the width based on your preference */
     max-width: 100%; /* Make sure images don't exceed their container */
     height: auto; /* Maintain aspect ratio */
@@ -449,7 +464,7 @@
     font-size: 2vw; /* Base font size, adjust as needed */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    color: black;
+    color: rgb(223, 213, 213);
 }
 #collaborationFormContainer{
    
@@ -612,6 +627,9 @@ text-align: center;
 }
 .contact {
     border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(46, 55, 69, 0.574);
+    border-left:  0.6vw solid rgb(135, 141, 180);
+    border-right: 0.6vw solid rgb(135, 141, 180);
     text-align: center;
     padding: 3rem;
     display: flex;
@@ -622,7 +640,7 @@ text-align: center;
 
 .contact h1 {
     font-size: 5vw;
-    color: #000000;
+    color: #eadfdf;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 2vw;
 }
@@ -631,15 +649,15 @@ text-align: center;
     font-size: 2vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 2rem;
-    color: rgb(0, 0, 0);
+    color: #eadfdf;
 }
 
 .contact form {
-    border: 1px solid black;
+    border: 1px solid #eadfdf;
     background: transparent;
     padding: 1rem;
     width: 50%;
-    box-shadow: #0e0e04 100px;
+    box-shadow: #eadfdf;
     height: auto;
 
 }
@@ -647,7 +665,7 @@ text-align: center;
 .contact label {
     display: block;
     margin-bottom: 0.5rem;
-    color: #0e0e04;
+    color: #eadfdf;
     font-size: 0.5rem;
 }
 
@@ -657,7 +675,7 @@ text-align: center;
     width: 30vw;
     padding: 0.1rem;
     margin-bottom: .5rem;
-    border: 1px solid #000000;
+    border: 1px solid #eadfdf;
 
 }
 
@@ -701,13 +719,19 @@ text-align: center;
 }
 
 .footer {
-    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(35, 47, 59);
+    height: 15vw;
+    border: 1px solid rgb(0, 0, 0);
+    border-left: 0.6vw solid rgb(135, 141, 180);
+    border-right: 0.6vw solid rgb(135, 141, 180);
+    border-bottom: 0.6vw solid rgb(135, 141, 180);
     text-align: center;
-    padding: 4rem;
+    padding: -0em 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-top: none;
+    border-bottom: none;
 }
 .footer h1{
     position: relative;
@@ -718,6 +742,8 @@ text-align: center;
 }
 .shop {
     padding: 15rem 4rem;
+    border-left: 0.1px solid rgb(135, 141, 180);
+    border-right: 0.1px solid rgb(135, 141, 180);
 }
 
 .shop .shop-button{
@@ -730,6 +756,7 @@ text-align: center;
     align-items: center;
     border: none;
     margin-top: -14rem;
+    
     
 
 }
@@ -747,13 +774,13 @@ text-align: center;
         
 }
 .shop .shop-button li {
-    border: 0.010px solid black;
+    border: 0.010px solid rgb(201, 194, 194);
     font-weight: bold;
     position: relative;
     padding: 1.4vw 5vw;
     text-decoration: none;
     transition: transform 0.1s ease;
-    background-color: #ffff;
+    background-color: rgb(34, 44, 56);
     
    
 }
@@ -765,10 +792,14 @@ text-align: center;
     font-size: 3vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-    color: black;
+    color: rgb(225, 218, 218);
 }
 .spacer{
+    background-color: rgb(35, 47, 59);
+    height: 10vw;
     border: 1px solid rgb(0, 0, 0);
+    border-left:  0.6vw solid rgb(135, 141, 180);
+    border-right: 0.6vw solid rgb(135, 141, 180);
     text-align: center;
     padding: -0em 4rem;
     display: flex;
@@ -778,42 +809,60 @@ text-align: center;
     border-bottom: none;
   }
   .spacerabout{
+    background-color: rgb(35, 47, 59);
+    height: 10vw;
     border: 1px solid rgb(0, 0, 0);
+    border-left:  0.6vw solid rgb(135, 141, 180);
+    border-right: 0.6vw solid rgb(135, 141, 180);
     text-align: center;
-    padding:0rem 4rem;
+    padding: -0em 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: none;
     border-top: none;
+    border-bottom: none;
   }
   .spacershop{
+    background-color: rgb(35, 47, 59);
+    height: 10vw;
     border: 1px solid rgb(0, 0, 0);
+    border-left:  0.6vw solid rgb(135, 141, 180);
+    border-right:  0.6vw solid rgb(135, 141, 180);
     text-align: center;
-    padding:0rem 4rem;
+    padding: -0em 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: none;
     border-top: none;
+    border-bottom: none;
   }
  .spacercontact{
+    background-color: rgb(35, 47, 59);
+    height: 10vw;
     border: 1px solid rgb(0, 0, 0);
+    border-left: 0.6vw solid rgb(135, 141, 180);
+    border-right:  0.6vw solid rgb(135, 141, 180);
     text-align: center;
-    padding:0rem 4rem;
+    padding: -0em 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-top: none;
+    border-bottom: none;
  }
  .spacerservices{
+    background-color: rgb(35, 47, 59);
+    height: 10vw;
     border: 1px solid rgb(0, 0, 0);
+    border-left:  0.6vw solid rgb(135, 141, 180);
+    border-right:  0.6vw solid rgb(135, 141, 180);
     text-align: center;
-    padding:0rem 4rem;
+    padding: -0em 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-top: none;
+    border-bottom: none;
  }
 
  .image-preview-modal {
@@ -857,6 +906,7 @@ text-align: center;
     position: relative;
       text-align: center;
       margin-top: -40px; /* Adjust the margin as needed */
+      color: #c9cacf;
     }
   
     .language-buttons ul {
@@ -871,7 +921,7 @@ text-align: center;
         display: inline-block;
         margin-right: 10px; /* Adjust the margin between buttons as needed */
         cursor: pointer;
-        border: 1px solid #110606; /* Add border for a button-like appearance */
+        border: 1px solid #dfd8d8; /* Add border for a button-like appearance */
         padding: 5px 10px;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 3vw;
@@ -898,6 +948,7 @@ text-align: center;
         text-align: center; /* Center the text horizontally */
         padding: 1rem; /* Add padding for better spacing */
         margin: 0; /* Remove default margin */
+        color: rgb(228, 217, 217);
     }
     
     #englishContent h1 {
@@ -912,6 +963,7 @@ text-align: center;
         text-align: center; /* Center the text horizontally */
         padding: 1rem; /* Add padding for better spacing */
         margin: 0; /* Remove default margin */
+        color: rgb(227, 219, 219);
     }
 
 
