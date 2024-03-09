@@ -12,6 +12,11 @@
         <body>
 
             <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+            <div id="intro-container">
+                <img src="class photo.gif" alt="Your Photo" class="intro-image">
+                <p class="intro-text">Hello! Welcome to my website.</p>
+              </div>
             
     <div class= "shopping" id="shopping">
         <img src="622396_bag_shopping_basket_buy_ecommerce_icon.png" alt=""> 
@@ -671,6 +676,19 @@ function closeForm(formId) {
     var form = document.getElementById(formId);
     form.style.display = 'none';
 }
+//website intro
+const introContainer = document.getElementById('intro-container');
+
+setTimeout(() => {
+  introContainer.style.opacity = 0;
+}, 2000); // Fade out after 2 seconds
+
+introContainer.addEventListener('transitionend', () => {
+  if (introContainer.style.opacity === '0') {
+    introContainer.remove(); // Remove the intro container after fade-out
+  }
+});
+
 
 
 
