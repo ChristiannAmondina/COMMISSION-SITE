@@ -13,11 +13,10 @@
 
             <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-            <div id="intro-container">
-                <img src="class photo.gif" alt="Your Photo" class="intro-image">
-                <p class="intro-text">Hello! Welcome to my website.</p>
-              </div>
-            
+                <div class="notice">
+                    <h3>Website loading... speed may vary <br> based on your internet connection.</h3>
+                </div>
+           
     <div class= "shopping" id="shopping">
         <img src="622396_bag_shopping_basket_buy_ecommerce_icon.png" alt=""> 
     </div>
@@ -25,6 +24,7 @@
     <div class="header"  id="home">
         <h1>PARKCHANQ</h1>
         <h3>アーティストのシュールなイラストレーター 🌷</h3>
+        
     </div>
     <div class="mobile-nav">
         <div class="headerr"  id="home">
@@ -48,7 +48,7 @@
 
     <div class="spacermain" id="home">
         <h6>. <br> </h6>
-        <div class="moving-text"></div>
+        
         
     </div>
 
@@ -63,7 +63,7 @@
             <li><a href="https://www.tiktok.com/@parkchanq_" target="_blank"><img src="8547041_tiktok_icon.png" alt=""></a></li>
 
         </ul>
-    
+        <audio id="hoverSound" src="1.mp3"></audio>
         <img id="interactiveIcon" src="interactive icon.gif" alt="interactive icon">
 
 
@@ -262,7 +262,7 @@
         <ul>
             <li id="commissionBtn" onclick="toggleForm('commissionFormContainer')"><a href="#Commission">Commission</a></li>
             <li id="collaborationBtn" onclick="toggleForm('collaborationFormContainer')"><a href="#Collaboration">Collaboration</a></li>
-            <li id="PatreonBtn" onclick="toggleForm('PatreonFormContainer')"><a href="#Patreon">Patreon........... </a></li>
+            <li id="PatreonBtn" onclick="toggleForm('PatreonFormContainer')"><a href="#Patreon">Coming_soon</a></li>
         </ul>
     
     <div id="commissionFormContainer" class="form-container">
@@ -288,22 +288,18 @@
         </div>
 
         <div class="form-section">
-            <h1>Proceed</h1>
+            <h1><a href="https://docs.google.com/forms/d/e/1FAIpQLSeSOZlLp-FovkimCGIpfxqcljj6ikuuudsYgc3LTkF_gEWs3A/viewform?usp=sf_link" target="_blank">Proceed</a></h1>
 
         </div>
         <button onclick="hideForm('commissionFormContainer')">Close</button>
     </div>
 
         <div id="collaborationFormContainer" class="form-container">
-            <h2>Commission Form</h2>
+            <h2>Collaboration Form</h2>
+            <p> NOT AVAILABLE YET</p>
 
             <div class="form-section">
                 <h3>Terms and Conditions</h3>
-        </div>
-        <div class="form-section">
-            <h3>Pricing</h3>
-        
-        
         </div>
 
         <div class="form-section">
@@ -312,7 +308,7 @@
         </div>
         
         <div class="form-section">
-            <h3>Guide</h3>
+            <h3>About</h3>
 
         </div>
 
@@ -322,6 +318,37 @@
         </div>
         <button onclick="hideForm('collaborationFormContainer')">Close</button>
     </div>
+    
+    <div id="PatreonFormContainer" class="form-container">
+        <h2>Patreon Container</h2>
+        <p> NOT AVAILABLE YET</p>
+
+
+        <div class="form-section">
+            <h3>Terms and Conditions</h3>
+    </div>
+    <div class="form-section">
+        <h3>Pricing</h3>
+    
+    
+    </div>
+
+    <div class="form-section">
+        <h3>Details</h3>
+
+    </div>
+    
+    <div class="form-section">
+        <h3>Guide</h3>
+
+    </div>
+
+    <div class="form-section">
+        <h1>Proceed</h1>
+
+    </div>
+    <button onclick="hideForm('PatreonFormContainer')">Close</button>
+</div>
     </div>
     
 
@@ -642,6 +669,7 @@
                 // Hide both forms initially
                 hideForm('commissionFormContainer');
                 hideForm('collaborationFormContainer');
+                hideForm('PatreonFormContainer');
 
                 // Show the clicked form
                 showForm(formId);
@@ -656,6 +684,11 @@
                 const formContainer = document.getElementById(formId);
                 formContainer.style.display = 'none';
             }
+            function hideForm(formId) {
+                const formContainer = document.getElementById(formId);
+                formContainer.style.display = 'none';
+            }
+
 
 
 ///form for about 
@@ -676,19 +709,27 @@ function closeForm(formId) {
     var form = document.getElementById(formId);
     form.style.display = 'none';
 }
-//website intro
-const introContainer = document.getElementById('intro-container');
 
-setTimeout(() => {
-  introContainer.style.opacity = 0;
-}, 2000); // Fade out after 2 seconds
+//interactive icon sound
+  const soundElement = document.getElementById("hoverSound");
+  const imageElement = document.getElementById("interactiveIcon");
 
-introContainer.addEventListener('transitionend', () => {
-  if (introContainer.style.opacity === '0') {
-    introContainer.remove(); // Remove the intro container after fade-out
-  }
+  imageElement.addEventListener("mouseenter", function() {
+  soundElement.play();
+  
+  imageElement.addEventListener("mouseout", function() {
+    soundElement.pause();
+  });
 });
+//notice text
+window.addEventListener("DOMContentLoaded", function() {
+  const notice = document.querySelector(".notice");
+  notice.classList.add("show"); // Add show class to trigger the effect
 
+  setTimeout(function() {
+    notice.classList.remove("show"); // Remove show class after 5 seconds
+  }, 5000); // Delay of 5 seconds (5000 milliseconds)
+});
 
 
 
