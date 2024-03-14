@@ -81,6 +81,34 @@
       
 
     }
+    .notice {
+        position: fixed; /* Keep it positioned on the screen */
+        bottom: 100px; /* Maintain your bottom positioning */
+        right: 30px; /* Maintain your right positioning */
+        font-size: 15px;
+        z-index: 10;
+        border: 2px solid rgb(0, 0, 0);
+        background-color: white;
+        padding: 3vw;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 3s ease-in-out; /* Smooth fade-in and fade-out over 0.5 seconds */
+      }
+      
+      .notice h3 {
+        position: relative; /* Maintain relative positioning */
+        bottom: 0px; /* Maintain your bottom positioning */
+        font-size: 2.2vw;
+        display: flex; /* Maintain flexbox properties */
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(5, 6, 6);
+      }
+      
+      .notice.show {
+        opacity: 1; /* Make it visible after adding the class */
+      }
+      
     .header{
    
    border: 1px solid black;
@@ -345,6 +373,7 @@
     text-decoration: none;
     transition: transform 0.1s ease;
      background-color: rgb(34, 44, 56);
+     border-radius: 1.2vw;
    
 }
 .art ul li:hover {
@@ -374,15 +403,42 @@
 }
 
 .art .gallery img {
-    width: calc(20% - 4px); /* Adjust the width based on your preference */
-    max-width: 100%; /* Make sure images don't exceed their container */
+    width: calc(13% - 4px); /* Adjust the width based on your preference */
+    max-width: 40%; /* Make sure images don't exceed their container */
     height: auto; /* Maintain aspect ratio */
     margin: 2px;
     transition: transform 0.3s ease;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    border: 1px solid rgb(221, 212, 212);
+    border: 2px solid rgb(16, 32, 45);
     border-radius: 4px;
 }
+
+.image-title {
+    position: absolute;
+    bottom: 30%; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.64); /* Semi-transparent white background */
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 3vw;
+    font-weight: bold;
+}
+.art .another {
+    padding: 15px;
+}
+
+.art .another ul li{
+    border: 1.2px solid rgb(210, 210, 218);
+    color: white;
+    border-radius:4px;
+    font-size: 2vw;
+    padding: 1.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+  }
+
 .art .gallery img:hover {
     transform: scale(1.1);
 }
