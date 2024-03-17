@@ -10,7 +10,7 @@
         background-color: rgb(47, 60, 76);
         border-bottom: none;
         text-align: center;
-        padding: 4rem;
+        padding: 19vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -83,15 +83,15 @@
     }
     .notice {
         position: fixed; /* Keep it positioned on the screen */
-        top: 46vw;
-       left: 5vw;
+        bottom: 46vw;
+       right: 5vw;
          /* Maintain your right positioning */
         font-size: 15px;
         z-index: 10;
         border: 2px solid rgb(0, 0, 0);
         background-color: white;
         padding: 3vw;
-        opacity: 0; /* Initially hidden */
+        opacity: 1; /* Initially hidden */
         transition: opacity 3s ease-in-out; /* Smooth fade-in and fade-out over 0.5 seconds */
       }
       
@@ -195,11 +195,13 @@
     align-items: center;
     bottom: 5.8rem;
     columns: inherit;
+    bottom: 25vw;
     
 }
 .main ul li {
     display: flex;
     position: relative;
+    top: 3vw;
   
 }
 
@@ -211,7 +213,7 @@
     right: 1.3rem;
     margin: 1px;
     border: 0.1px solid black;
-    width: 4vw;
+    width: 2vw;
     z-index: 1;
 
 }
