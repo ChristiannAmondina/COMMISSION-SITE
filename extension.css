@@ -1,0 +1,39 @@
+.media {
+  position: fixed;
+  top: 16.2%; /* Adjust top positioning as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  text-align: center;
+}
+
+.media ul {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  left: 0.200px;
+}
+
+.media ul li {
+  display: inline-block;
+  margin-right: 5px; /* Adjust as needed to make the icons closer */
+  border: 1.3px solid rgb(201, 213, 220);
+  padding: 5px; /* Reduce padding to make icons smaller */
+}
+
+.media ul li a img {
+  width: 15px; /* Set the width of the social media icons */
+  height: 15px; /* Set the height of the social media icons */
+  margin: 0; /* Remove the margin between the icons */
+  background-color: #ccc;
+  padding: 5px; /* Reduce padding to make icons smaller */
+}
+
+.media ul li a img:hover {
+  border: 3px solid rgb(255, 255, 255);
+  background-color: rgb(255, 244, 244);
+}

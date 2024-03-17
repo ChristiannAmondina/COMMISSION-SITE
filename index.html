@@ -23,14 +23,11 @@
 
     <div class="header"  id="home">
         <h1>PARKCHANQ</h1>
-        <h3>アーティストのシュールなイラストレーター 🌷</h3>
+   
         
     </div>
     <div class="mobile-nav">
-        <div class="headerr"  id="home">
-            <h1>PARKCHANQ</h1>
-            <h3>アーティストのシュールなイラストレーター 🌷</h3>
-        </div>
+        
         <div class="socials">
             <div class="burger-menu">&#9776;</div>
             <ul>
@@ -41,14 +38,22 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            
+        </div>
+        <div class="media">
+            <ul>
+                <li><a href="https://www.facebook.com/parkchanq1" target="_blank"><img src="8679364_facebook_circle_icon.png" alt="facebook logo"></a></li>
+                <li><a href="https://www.instagram.com/parkchanq_/?img_index=1" target="blank"><img src="5279112_camera_instagram_social media_instagram logo_icon.png" alt="instagram logo"></a></li>
+                <li><a href="https://www.youtube.com/@Parkchanq" target="_blank"><img src="11053969_x_logo_twitter_new_brand_icon.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/@Parkchanq" target="_blank"><img src="5279120_play_video_youtube_youtuble logo_icon (1).png" alt=""></a></li>
+                <li><a href="https://www.deviantart.com/parkchanq/gallery" target="_blank"><img src="11120482_fi_brands_devianart_icon.png" alt=""></a></li>
+                <li><a href="https://www.artstation.com/parkchanq183" target="_blank"><img src="8666128_artstation_icon (1).png" alt=""></a></li>
+                <li><a href="https://www.tiktok.com/@parkchanq_" target="_blank"><img src="8547041_tiktok_icon.png" alt=""></a></li>
+            </ul>
         </div>
     </div>
 
 
-    <div class="spacermain" id="home">
-        <h6>. <br> </h6>
-        
+    <div class="spacermain">
         
     </div>
 
@@ -67,11 +72,7 @@
         <img id="interactiveIcon" src="interactive icon.gif" alt="interactive icon">
 
 
-        
-
-        <audio id="sound1" src="1.mp3"></audio>
-        <audio id="sound2" src="2.mp3"></audio>
-        <audio id="sound4" src="4.mp3"></audio>
+    
         
 
 
@@ -117,15 +118,11 @@
                 <li><a href="#" data-year="2024">2024</a></li>
             
             </ul>
-               <div class="another">
-                <ul>
-                    <li>OC</li>
-                    <li>Series</li>
-                </ul>
-            </div>
+        
         <div class="gallery">
             <!-- 2023 images -->
-            
+                        
+          
             <img src="99.jpg" alt="Artwork 96" data-year="2023"data-year="2024" data-title="'A boy'">
             <img src="98.jpg" alt="Artwork 95" data-year="2023"data-year="2024" data-title="'The winter watchers'">
             <img src="97.jpg" alt="Artwork 94" data-year="2023"data-year="2024" data-title="'Piccaso'">
@@ -548,8 +545,12 @@
                     });
                 }, 500); // Set timeout to match the transition duration
             });
+            
         });
+
     });
+    
+    
     
     document.addEventListener("DOMContentLoaded", function () {
     // ... (existing code)
@@ -640,41 +641,40 @@
         // Initialize Email.js with your user ID-------------------------------------------------------------------------------------------------
     // Your JavaScript code here
     const contactForm = document.querySelector("#contact-form");
-            const submitBtn = document.querySelector(".submit-btn");
-            const nameInput = document.querySelector("#user_name");
-            const emailInput = document.querySelector("#user_email");
-            const messageInput = document.querySelector("#message");
+const submitBtn = document.querySelector(".submit-btn");
+const nameInput = document.querySelector("#user_name");
+const emailInput = document.querySelector("#user_email");
+const messageInput = document.querySelector("#message");
 
-            const publicKey = "6ly6FDQeMwVzoppHB";
-            const serviceID = "service_bvhfwuw";
-            const templateID = "template_t4fi7jv";
+const publicKey = "6ly6FDQeMwVzoppHB";
+const serviceID = "service_e6uw3s7"; // Updated service ID
+const templateID = "template_ka8xj5t"; // Updated template ID
 
-            emailjs.init(publicKey);
+emailjs.init(publicKey);
 
-            contactForm.addEventListener("submit", e => {
-                e.preventDefault();
+contactForm.addEventListener("submit", e => {
+    e.preventDefault();
 
-                submitBtn.innerText = "Just A Moment...";
+    submitBtn.innerText = "Sending...";
 
-                const inputFields = {
+    const inputFields = {
         name: nameInput.value,   // User's name
         email: emailInput.value, // User's email
         message: messageInput.value
     };
 
-
-                emailjs.send(serviceID, templateID, inputFields)
-                    .then(() => {
-                        submitBtn.innerText = "Message Sent Successfully";
-                        nameInput.value = "";
-                        emailInput.value = "";
-                        messageInput.value = "";
-                    }, (error) => {
-                        console.log(error);
-                        submitBtn.innerText = "Something went wrong";
-                    });
-            });
-
+    emailjs.send(serviceID, templateID, inputFields)
+        .then(() => {
+            submitBtn.innerText = "Message Sent Successfully";
+            nameInput.value = "";
+            emailInput.value = "";
+            messageInput.value = "";
+        })
+        .catch((error) => {
+            console.error("Error sending message:", error);
+            submitBtn.innerText = "Something went wrong";
+        });
+});
 
             //Lazy loading 
            document.addEventListener("DOMContentLoaded", function () {

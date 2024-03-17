@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parkchanq</title>
+        <link rel="icon" type="image/png" href="interactive icon.gif">
+        <link rel="stylesheet" href="desktopp.css">
+        <link rel="stylesheet" href="mobile.css">
+        
+    </head>
+    <body>
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        
+<div class= "shopping" id="shopping">
+    <img src="622396_bag_shopping_basket_buy_ecommerce_icon.png" alt=""> 
+</div>
+
+<div class="header"  id="home">
+    <h1>PARKCHANQ</h1>
+    <h3>アーティストのシュールなイラストレーター 🌷</h3>
+</div>
+<div class="mobile-nav">
+    <div class="headerr"  id="home">
+        <h1>PARKCHANQ</h1>
+        <h3>アーティストのシュールなイラストレーター 🌷</h3>
+    </div>
+    <div class="socials">
+        <div class="burger-menu">&#9776;</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#date">Arts</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+    </div>
+</div>
+
+
+<div class="spacermain" id="home">
+    <h6>. <br> </h6>
+    <div class="moving-text"></div>
+    
+</div>
+
+<div class="main">
+    <ul>
+        <li><a href="https://www.facebook.com/parkchanq1" target="_blank"><img src="8679364_facebook_circle_icon.png" alt="facebook logo"></a></li>
+        <li><a href="https://www.instagram.com/parkchanq_/?img_index=1" target="blank"><img src="5279112_camera_instagram_social media_instagram logo_icon.png" alt="instagram logo"></a></li>
+        <li><a href="https://www.youtube.com/@Parkchanq" target="_blank"><img src="11053969_x_logo_twitter_new_brand_icon.png" alt=""></a></li>
+        <li><a href="https://www.youtube.com/@Parkchanq" target="_blank"><img src="5279120_play_video_youtube_youtuble logo_icon (1).png" alt=""></a></li>
+        <li><a href="https://www.deviantart.com/parkchanq/gallery" target="_blank"><img src="11120482_fi_brands_devianart_icon.png" alt=""></a></li>
+        <li><a href="https://www.artstation.com/parkchanq183" target="_blank"><img src="8666128_artstation_icon (1).png" alt=""></a></li>
+        <li><a href="https://www.tiktok.com/@parkchanq_" target="_blank"><img src="8547041_tiktok_icon.png" alt=""></a></li>
+
+    </ul>
+
+    <img id="interactiveIcon" src="interactive icon.gif" alt="interactive icon">
+
+
+    
+
+    <audio id="sound1" src="1.mp3"></audio>
+    <audio id="sound2" src="2.mp3"></audio>
+    <audio id="sound4" src="4.mp3"></audio>
+    
+
+
+    <div id="englishContent" style="position: relative; bottom: 4rem; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;">
+        <h1>Parkchanq is a Filipino illustrator who creates compelling dark and surreal artworks. <br> <br>
+            Hi there, my name is Christian, also known as parkchanq. Thank you for visiting my 
+            website, where I can share all of my artwork and provide my services to everyone.
+            The website is still in development, so please feel free to browse around and don't hesitate to
+            contact us if you run into any problems. ❤️
+        
+        </h1>
+    </div>
+    <div id="japaneseContent"  style="position: relative; bottom: 4rem; display: none;left: 0.250rem;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        <h1>
+            "Parkchanqは、フィリピンのイラストレーターであり、魅力的なダークでシュールなアートワークを作成しています。"
+            <br><br>
+            こんにちは、私はクリスチャンと申します。また、parkchanqとしても知られています。私のウェブサイトへようこそ。ここでは私のアー
+            トワークをすべて共有し、皆さんにサービスを提供することができます。ウェブサイトはまだ開発中ですので、気軽にブラウズしていただき、
+            何か問題があればお気軽にお問い合わせください。❤️
+        </h1>
+    </div>
+    <div class="language-buttons">
+        
+            <li onclick="toggleLanguage('english')" style="position: relative; bottom: 3rem;left: 0.300rem;">English</li>
+            <li onclick="toggleLanguage('japanese')" style="position: relative; bottom: 3rem;left: 0.300rem;">日本語</li>
+        
+    </div>
+    
+</div>
+
+<div class="spacerabout" id="about">
+    <h6>.</h6>
+</div>
+
+<div class="about">
+    <img id="aboutimage" src="static about me.gif" alt="interactive icon">
+    <div class="aboutbuttons">
+        <ul>
+            <li onclick="showForm('aboutMeForm')">ABOUT ME</li>
+            <li onclick="showForm('aboutWorksForm')">ABOUT MY WORKS</li>
+            <li onclick="showForm('perspectiveGoalsForm')">MY PERSPECTIVE AND GOALS</li>
+            <li onclick="showForm('aboutWebsiteForm')">ABOUT THE WEBSITE</li>
+        </ul>
+    </div>
+
+    <!-- ... (previous code) ... -->
+
+<div id="aboutMeForm" class="form">
+    <div class="textbox">
+        <p>This is the ABOUT ME section.</p>
+        <p>Additional information about yourself goes here...</p>
+        <button class="closeButton" onclick="closeForm('aboutMeForm')">Close</button>
+    </div>
+</div>
+
+<div id="aboutWorksForm" class="form">
+    <div class="textbox">
+        <p>This is the ABOUT MY WORKS section.</p>
+        <p>Details about your works and projects can be included here...</p>
+        <button class="closeButton" onclick="closeForm('aboutWorksForm')">Close</button>
+    </div>
+</div>
+
+<div id="perspectiveGoalsForm" class="form">
+    <div class="textbox">
+        <p>This is the MY PERSPECTIVE AND GOALS section.</p>
+        <p>Discuss your perspectives and goals in this space...</p>
+        <button class="closeButton" onclick="closeForm('perspectiveGoalsForm')">Close</button>
+    </div>
+</div>
+
+<div id="aboutWebsiteForm" class="form">
+    <div class="textbox">
+        <p>This is the ABOUT THE WEBSITE section.</p>
+        <p>Provide information about the purpose and features of your website...</p>
+        <button class="closeButton" onclick="closeForm('aboutWebsiteForm')">Close</button>
+    </div>
+</div>
+
+<!-- ... (remaining code) ... -->
+
+</div>
+
+
+
+    <div class="spacer" id="date">
+    <h6>.</h6>
+    
+    
+    </div>
+    <div class="art" >
+        
+        <ul>
+            <li><a href="#" data-year="2023">2023</a></li>
+            <li><a href="#" data-year="2024">2024</a></li>
+        
+        </ul>
+        
+    <div class="gallery">
+        <!-- 2023 images -->
+        
+        <img src="99.jpg" alt="Artwork 96" data-year="2023">
+        <img src="98.jpg" alt="Artwork 95" data-year="2023">
+        <img src="97.jpg" alt="Artwork 94" data-year="2023">
+        <img src="96.jpg" alt="Artwork 93" data-year="2023">
+        <img src="95.jpg" alt="Artwork 92" data-year="2023">
+        <img src="94.jpg" alt="Artwork 91" data-year="2023">
+        <img src="93.jpg" alt="Artwork 90" data-year="2023">
+        <img src="92.jpg" alt="Artwork 89" data-year="2023">
+        <img src="91.jpg" alt="Artwork 88" data-year="2023">
+        <img src="90.jpg" alt="Artwork 87" data-year="2023">
+        <img src="89.jpg" alt="Artwork 86" data-year="2023">
+        <img src="87.jpg" alt="Artwork 85" data-year="2023">
+        <img src="86.jpg" alt="Artwork 84" data-year="2023">
+        <img src="85.jpg" alt="Artwork 83" data-year="2023">
+        <img src="84.jpg" alt="Artwork 82" data-year="2023">
+        <img src="83.jpg" alt="Artwork 81" data-year="2023">
+        <img src="82.jpg" alt="Artwork 80" data-year="2023">
+        <img src="81.jpg" alt="Artwork 79" data-year="2023">
+        <img src="80.jpg" alt="Artwork 78" data-year="2023">
+        <img src="79.jpg" alt="Artwork 77" data-year="2023">
+        <img src="78.jpg" alt="Artwork 76" data-year="2023">
+        <img src="77.jpg" alt="Artwork 75" data-year="2023">
+        <img src="76.jpg" alt="Artwork 74" data-year="2023">
+        <img src="75.jpg" alt="Artwork 73" data-year="2023">
+        <img src="74.jpg" alt="Artwork 72" data-year="2023">
+        <img src="73.jpg" alt="Artwork 71" data-year="2023">
+        <img src="72.jpg" alt="Artwork 70" data-year="2023">
+        <img src="71.jpg" alt="Artwork 69" data-year="2023">
+        <img src="70.jpg" alt="Artwork 68" data-year="2023">
+        <img src="69.jpg" alt="Artwork 67" data-year="2023">
+        <img src="68.jpg" alt="Artwork 66" data-year="2023">
+        <img src="67.jpg" alt="Artwork 65" data-year="2023">
+        <img src="66.jpg" alt="Artwork 64" data-year="2023">
+        <img src="65.jpg" alt="Artwork 63" data-year="2023">
+        <img src="64.jpg" alt="Artwork 62" data-year="2023">
+        <img src="63.jpg" alt="Artwork 61" data-year="2023">
+        <img src="62.jpg" alt="Artwork 60" data-year="2023">
+        <img src="61.jpg" alt="Artwork 59" data-year="2023">
+        <img src="60.jpg" alt="Artwork 58" data-year="2023">
+        <img src="59.jpg" alt="Artwork 57" data-year="2023">
+        <img src="58.jpg" alt="Artwork 56" data-year="2023">
+        <img src="57.jpg" alt="Artwork 55" data-year="2023">
+        <img src="56.jpg" alt="Artwork 54" data-year="2023">
+        <img src="55.jpg" alt="Artwork 53" data-year="2023">
+        <img src="54.jpg" alt="Artwork 52" data-year="2023">
+        <img src="53.jpg" alt="Artwork 51" data-year="2023">
+        <img src="52.jpg" alt="Artwork 50" data-year="2023">
+        <img src="51.jpg" alt="Artwork 49" data-year="2023">
+        <img src="50.jpg" alt="Artwork 48" data-year="2023">
+        <img src="49.jpg" alt="Artwork 47" data-year="2023">
+        <img src="48.jpg" alt="Artwork 46" data-year="2023">
+        <img src="47.jpg" alt="Artwork 45" data-year="2023">
+        <img src="46.jpg" alt="Artwork 44" data-year="2023">
+        <img src="45.jpg" alt="Artwork 43" data-year="2023">
+        <img src="44.jpg" alt="Artwork 42" data-year="2023">
+        <img src="43.jpg" alt="Artwork 41" data-year="2023">
+        <img src="42.jpg" alt="Artwork 40" data-year="2023">
+        <img src="41.jpg" alt="Artwork 39" data-year="2023">
+        <img src="40.jpg" alt="Artwork 38" data-year="2023">
+        <img src="39.jpg" alt="Artwork 37" data-year="2023">
+        <img src="38.jpg" alt="Artwork 36" data-year="2023">
+        <img src="37.jpg" alt="Artwork 35" data-year="2023">
+        <img src="36.jpg" alt="Artwork 34" data-year="2023">
+        <img src="35.jpg" alt="Artwork 33" data-year="2023">
+        <img src="34.jpg" alt="Artwork 32" data-year="2023">
+        <img src="33.jpg" alt="Artwork 31" data-year="2023">
+        <img src="32.jpg" alt="Artwork 30" data-year="2023">
+        <img src="31.jpg" alt="Artwork 29" data-year="2023">
+        <img src="30.jpg" alt="Artwork 28" data-year="2023">
+        <img src="29.jpg" alt="Artwork 27" data-year="2023">
+        <img src="28.jpg" alt="Artwork 26" data-year="2023">
+        <img src="27.jpg" alt="Artwork 25" data-year="2023">
+        <img src="26.jpg" alt="Artwork 24" data-year="2023">
+        <img src="25.jpg" alt="Artwork 23" data-year="2023">
+        <img src="24.jpg" alt="Artwork 22" data-year="2023">
+        <img src="23.jpg" alt="Artwork 21" data-year="2023">
+        <img src="22.jpg" alt="Artwork 20" data-year="2023">
+        <img src="21.jpg" alt="Artwork 19" data-year="2023">
+        <img src="20.jpg" alt="Artwork 18" data-year="2023">
+        <img src="19.jpg" alt="Artwork 17" data-year="2023">
+        <img src="18.jpg" alt="Artwork 16" data-year="2023">
+        <img src="17.jpg" alt="Artwork 15" data-year="2023">
+        <img src="16.jpg" alt="Artwork 15" data-year="2023">
+        <img src="15.jpg" alt="Artwork 14" data-year="2023">
+        <img src="14.jpg" alt="Artwork 14" data-year="2023">
+        <img src="13.jpg" alt="Artwork 13" data-year="2023">
+        <img src="12.jpg" alt="Artwork 12" data-year="2023">
+        <img src="11.jpg" alt="Artwork 11" data-year="2023">
+        <img src="10.jpg" alt="Artwork 10" data-year="2023">
+        <img src="9.jpg" alt="Artwork 9" data-year="2023">
+        <img src="8.jpg" alt="Artwork 8" data-year="2023">
+        <img src="7.jpg" alt="Artwork 7" data-year="2023">
+        <img src="6.jpg" alt="Artwork 6" data-year="2023">
+        <img src="5.jpg" alt="Artwork 5" data-year="2023">
+        <img src="4.jpg" alt="Artwork 4" data-year="2023">
+        <img src="3.jpg" alt="Artwork 3" data-year="2023">
+        <img src="2.jpg" alt="Artwork 2" data-year="2023">
+        <img src="1.jpg" alt="Artwork 1" data-year="2023">
+
+
+        <!-- 2024 images -->
+        <img src="2024 3.jpg" alt="Artwork 17" data-year="2024">
+        <img src="2024 2.jpg" alt="Artwork 18" data-year="2024" >
+        <img src="2024 1.jpg" alt="Artwork 19" data-year="2024">
+        
+    </div>
+</div>
+
+<!-- Add this structure after your existing HTML -->
+<div class="image-preview-modal" id="imagePreviewModal">
+    <div class="image-container">
+    <img src="" alt="Preview Image" id="previewImage">
+    <button class="close-button" id="closePreview">Close</button>
+    </div>
+</div>
+
+
+
+<div class="spacershop" id="shop">
+    <h6>.</h6>
+</div>
+<div class="shop">
+
+    <div class="shop-button">
+        <ul>
+            <li><a href="javascript:void(0);" onclick="showNotAvailable('Prints')">Prints</a></li>
+            <li><a href="javascript:void(0);" onclick="showNotAvailable('Stickers')">Stickers</a></li>
+        </ul>
+        <h1 id="availabilityText"></h1>
+    </div>
+</div>
+
+<div class="spacerservices" id="services">
+    <h6>.</h6>
+</div>
+
+<div class="services">
+    
+    <ul>
+        <li id="commissionBtn" onclick="toggleForm('commissionFormContainer')"><a href="#Commission">Commission</a></li>
+        
+        
+        <li id="collaborationBtn" onclick="toggleForm('collaborationFormContainer')"><a href="#Collaboration">Collaboration</a></li>
+        <li id="PatreonBtn" onclick="toggleForm('PatreonFormContainer')"><a href="#Patreon">Patreon........... </a></li>
+    </ul>
+
+<div id="commissionFormContainer" class="form-container">
+    <h2>Commission Form</h2>
+
+        <div class="form-section">
+            <h3>Terms and Conditions</h3>
+    </div>
+    <div class="form-section">
+        <h3>Pricing</h3>
+    
+    
+    </div>
+
+    <div class="form-section">
+        <h3>Details</h3>
+
+    </div>
+    
+    <div class="form-section">
+        <h3>Guide</h3>
+
+    </div>
+
+    <div class="form-section">
+        <h1>Proceed</h1>
+
+    </div>
+    <button onclick="hideForm('commissionFormContainer')">Close</button>
+</div>
+
+    <div id="collaborationFormContainer" class="form-container">
+        <h2>Commission Form</h2>
+
+        <div class="form-section">
+            <h3>Terms and Conditions</h3>
+    </div>
+    <div class="form-section">
+        <h3>Pricing</h3>
+    
+    
+    </div>
+
+    <div class="form-section">
+        <h3>Details</h3>
+
+    </div>
+    
+    <div class="form-section">
+        <h3>Guide</h3>
+
+    </div>
+
+    <div class="form-section">
+        <h1>Proceed</h1>
+
+    </div>
+    <button onclick="hideForm('collaborationFormContainer')">Close</button>
+</div>
+</div>
+
+<div class="spacercontact" id="contact">
+    <h6>.</h6>
+</div>
+
+<div class="contact">
+    <h1>Contact Us</h1>
+    <p>Feel free to send us a message about anything you might need help with. We would love to hear from you!</p>
+
+    <form id="contact-form">
+    
+        <label for="contact_user_name"><strong>Name:</strong></label>
+        <input type="text" id="contact_user_name" name="user_name" required>
+
+
+        <label for="contact_user_email"><strong>Email:</strong></label>
+        <input type="email" id="contact_user_email" name="user_email" required>
+
+        <label for="contact_message"><strong>Message:</strong></label>
+        <textarea id="contact_message" name="message" rows="5" required></textarea>
+
+    
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+
+
+    <div class="footer">
+        <h1>.</h1>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const burgerMenu = document.querySelector(".burger-menu");
+            const closeButton = document.querySelector(".close-button");
+            const mobileNav = document.querySelector(".mobile-nav");
+
+            burgerMenu.addEventListener("click", function () {
+                mobileNav.classList.add("show");
+                // Add event listener to close the menu when clicking outside of it
+                document.addEventListener("click", closeMobileNav);
+            });
+
+            closeButton.addEventListener("click", function () {
+                mobileNav.classList.remove("show");
+                document.removeEventListener("click", closeMobileNav);
+            });
+
+            function closeMobileNav(event) {
+                // Check if the click is outside the mobile navigation
+                if (!mobileNav.contains(event.target) && event.target !== burgerMenu) {
+                    mobileNav.classList.remove("show");
+                    document.removeEventListener("click", closeMobileNav);
+                }
+            }
+        });
+
+        /*auto scroll*/
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll('.socials ul li a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', scrollToSection);
+    });
+
+    function scrollToSection(e) {
+        e.preventDefault();
+
+        const targetId = e.target.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const yearLinks = document.querySelectorAll('.art ul li a');
+    const galleryItems = document.querySelectorAll('.art .gallery img');
+
+    // Initially hide 2023 images
+    galleryItems.forEach(item => {
+        const itemYear = item.getAttribute('data-year');
+        if (itemYear === '2023') {
+            item.style.opacity = '0';
+        }
+    });
+
+    yearLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const selectedYear = link.getAttribute('data-year');
+
+            // Fade out all gallery items
+            galleryItems.forEach(item => {
+                item.style.opacity = '0';
+            });
+
+            // Delay to allow fade-out effect
+            setTimeout(() => {
+                // Hide all gallery items
+                galleryItems.forEach(item => {
+                    item.style.display = 'none';
+                });
+
+                // Show gallery items for the selected year with fade-in effect
+                galleryItems.forEach(item => {
+                    const itemYear = item.getAttribute('data-year');
+                    if (itemYear === selectedYear) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                        }, 50); // Delay to allow fade-in effect
+                    }
+                });
+            }, 500); // Set timeout to match the transition duration
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+// ... (existing code)
+
+const galleryItems = document.querySelectorAll('.art .gallery img');
+const overlay = document.getElementById('overlay');
+const previewContainer = document.getElementById('preview-container');
+const previewImage = document.getElementById('preview-image');
+const closeButton = document.getElementById('close-button');
+
+galleryItems.forEach(item => {
+    item.addEventListener('click', function () {
+    const imageUrl = this.src;
+    previewImage.src = imageUrl;
+    overlay.classList.add('show');
+    });
+});
+
+closeButton.addEventListener('click', function () {
+    overlay.classList.remove('show');
+});
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+const galleryItems = document.querySelectorAll('.art .gallery img');
+const previewModal = document.getElementById('imagePreviewModal');
+const previewImage = document.getElementById('previewImage');
+const closePreviewButton = document.getElementById('closePreview');
+
+galleryItems.forEach(item => {
+    item.addEventListener('click', function () {
+    // Set the preview image source
+    const imgSrc = item.src;
+    previewImage.src = imgSrc;
+
+    // Display the preview modal
+    previewModal.style.display = 'flex';
+    });
+});
+
+// Close the preview modal when the close button is clicked
+closePreviewButton.addEventListener('click', function () {
+    previewModal.style.display = 'none';
+});
+});
+
+
+//Translates
+function toggleLanguage(language) {
+        if (language === 'english') {
+            document.getElementById('englishContent').style.display = 'block';
+            document.getElementById('japaneseContent').style.display = 'none';
+        } else if (language === 'japanese') {
+            document.getElementById('englishContent').style.display = 'none';
+            document.getElementById('japaneseContent').style.display = 'block';
+        }
+    }
+    
+
+    // Initialize Email.js with your user ID-------------------------------------------------------------------------------------------------
+// Your JavaScript code here
+const contactForm = document.querySelector("#contact-form");
+        const submitBtn = document.querySelector(".submit-btn");
+        const nameInput = document.querySelector("#user_name");
+        const emailInput = document.querySelector("#user_email");
+        const messageInput = document.querySelector("#message");
+
+        const publicKey = "6ly6FDQeMwVzoppHB";
+        const serviceID = "service_e6uw3s7";
+        const templateID = "template_ka8xj5t";
+
+        emailjs.init(publicKey);
+
+        contactForm.addEventListener("submit", e => {
+            e.preventDefault();
+
+            submitBtn.innerText = "Just A Moment...";
+
+            const inputFields = {
+    name: nameInput.value,   // User's name
+    email: emailInput.value, // User's email
+    message: messageInput.value
+};
+
+
+            emailjs.send(serviceID, templateID, inputFields)
+                .then(() => {
+                    submitBtn.innerText = "Message Sent Successfully";
+                    nameInput.value = "";
+                    emailInput.value = "";
+                    messageInput.value = "";
+                }, (error) => {
+                    console.log(error);
+                    submitBtn.innerText = "Something went wrong";
+                });
+        });
+
+
+        //Lazy loading 
+        document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll('.art .gallery img');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const image = entry.target;
+                const imageUrl = image.getAttribute('src');
+                image.setAttribute('src', imageUrl);
+                observer.unobserve(image);
+            }
+        });
+    });
+
+    images.forEach(image => {
+        observer.observe(image);
+    });
+});
+
+//form for services
+
+        function toggleForm(formId) {
+            // Hide both forms initially
+            hideForm('commissionFormContainer');
+            hideForm('collaborationFormContainer');
+
+            // Show the clicked form
+            showForm(formId);
+        }
+
+        function showForm(formId) {
+            const formContainer = document.getElementById(formId);
+            formContainer.style.display = 'block';
+        }
+
+        function hideForm(formId) {
+            const formContainer = document.getElementById(formId);
+            formContainer.style.display = 'none';
+        }
+
+
+///form for about 
+        function showForm(formId) {
+// Hide all forms
+var forms = document.querySelectorAll('.form');
+forms.forEach(function(form) {
+    form.style.display = 'none';
+});
+
+// Show the selected form
+var selectedForm = document.getElementById(formId);
+selectedForm.style.display = 'block';
+}
+
+function closeForm(formId) {
+// Hide the specified form
+var form = document.getElementById(formId);
+form.style.display = 'none';
+}
+
+
+
+        
+    </script>
+
+
+</body>
+</html>
