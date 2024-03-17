@@ -91,7 +91,7 @@
         border: 2px solid rgb(0, 0, 0);
         background-color: white;
         padding: 3vw;
-        opacity: 1; /* Initially hidden */
+        opacity: 0; /* Initially hidden */
         transition: opacity 3s ease-in-out; /* Smooth fade-in and fade-out over 0.5 seconds */
       }
       
