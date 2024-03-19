@@ -11,11 +11,12 @@
         </head>
         <body>
 
-            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
                 <div class="notice">
                     <h3>Website loading... speed may vary <br> based on your internet connection.</h3>
                 </div>
+            
            
     <div class= "shopping" id="shopping">
         <img src="622396_bag_shopping_basket_buy_ecommerce_icon.png" alt=""> 
@@ -363,9 +364,9 @@
         <div class="aboutbuttons">
             <ul>
                 <li onclick="showForm('aboutMeForm')">GENERAL</li>
-                <li onclick="showForm('aboutWorksForm')">ABOUT MY WORKS</li>
-                <li onclick="showForm('perspectiveGoalsForm')">MY PERSPECTIVE AND GOALS</li>
-                <li onclick="showForm('aboutWebsiteForm')">ABOUT THE WEBSITE</li>
+                <li onclick="showForm('aboutWorksForm')">WORKS</li>
+                <li onclick="showForm('perspectiveGoalsForm')">PERSPECTIVE AND GOALS</li>
+                <li onclick="showForm('aboutWebsiteForm')">ABOUT WEBSITE</li>
             </ul>
         </div>
 
@@ -628,27 +629,41 @@
 
     //Translates
     function toggleLanguage(language) {
-            if (language === 'english') {
-                document.getElementById('englishContent').style.display = 'block';
-                document.getElementById('japaneseContent').style.display = 'none';
-            } else if (language === 'japanese') {
-                document.getElementById('englishContent').style.display = 'none';
-                document.getElementById('japaneseContent').style.display = 'block';
-            }
-        }
+    // Get all list items
+    var listItems = document.querySelectorAll('.language-buttons li');
+    
+    // Loop through each list item
+    listItems.forEach(function(item) {
+        // Remove the 'active' class from all list items
+        item.classList.remove('active');
+    });
+    
+    // Add the 'active' class to the clicked list item
+    event.target.classList.add('active');
+
+    // Show/hide content based on selected language
+    if (language === 'english') {
+        document.getElementById('englishContent').style.display = 'block';
+        document.getElementById('japaneseContent').style.display = 'none';
+    } else if (language === 'japanese') {
+        document.getElementById('englishContent').style.display = 'none';
+        document.getElementById('japaneseContent').style.display = 'block';
+    }
+}
+
         
 
         // Initialize Email.js with your user ID-------------------------------------------------------------------------------------------------
     // Your JavaScript code here
     const contactForm = document.querySelector("#contact-form");
 const submitBtn = document.querySelector(".submit-btn");
-const nameInput = document.querySelector("#user_name");
-const emailInput = document.querySelector("#user_email");
-const messageInput = document.querySelector("#message");
+const nameInput = document.querySelector("#contact_user_name");
+const emailInput = document.querySelector("#contact_user_email");
+const messageInput = document.querySelector("#contact_message"); // Corrected ID
 
-const publicKey = "6ly6FDQeMwVzoppHB";
+const publicKey = "6ly6FDQeMwVzoppHB"; // Replace with your public key
 const serviceID = "service_e6uw3s7"; // Updated service ID
-const templateID = "template_ka8xj5t"; // Updated template ID
+const templateID = "template_ka8xj5t"; // Replace with your template ID
 
 emailjs.init(publicKey);
 
@@ -658,8 +673,8 @@ contactForm.addEventListener("submit", e => {
     submitBtn.innerText = "Sending...";
 
     const inputFields = {
-        name: nameInput.value,   // User's name
-        email: emailInput.value, // User's email
+        name: nameInput.value,
+        email: emailInput.value,
         message: messageInput.value
     };
 
@@ -675,6 +690,7 @@ contactForm.addEventListener("submit", e => {
             submitBtn.innerText = "Something went wrong";
         });
 });
+
 
             //Lazy loading 
            document.addEventListener("DOMContentLoaded", function () {
@@ -757,12 +773,21 @@ function closeForm(formId) {
 //notice text
 window.addEventListener("DOMContentLoaded", function() {
   const notice = document.querySelector(".notice");
-  notice.classList.add("show"); // Add show class to trigger the effect
+  notice.classList.add("show");
+
+  // Add event listener to detect when the transition ends
+  notice.addEventListener("transitionend", function(event) {
+    if (event.propertyName === "opacity" && !notice.classList.contains("show")) {
+      notice.classList.add("hidden"); // Add hidden class after fading out
+    }
+  });
 
   setTimeout(function() {
-    notice.classList.remove("show"); // Remove show class after 5 seconds
-  }, 7000); // Delay of 5 seconds (5000 milliseconds)
+    notice.classList.remove("show");
+  }, 5000); // Change the delay to 5 seconds (5000 milliseconds)
 });
+
+
 
 
 
