@@ -353,7 +353,7 @@
       
     border: 1.3px solid black;
     text-align: center;
-    padding: 5vw 5rem;
+    padding: 15vw 5rem;
     width: 50%;
     margin: 0 auto;
     background-color: rgba(46, 55, 69, 0.574);
@@ -378,10 +378,11 @@
 .art ul li{
     border: 1px solid rgb(208, 198, 198);
     font-weight: bold;
+    position: relative;
     padding: 10px 20px;
     text-decoration: none;
     transition: transform 0.1s ease;
-    background-color: rgb(32, 42, 53);
+    background-color: rgb(39, 41, 53);
     bottom: 13rem;
     border-radius: 10px;
    
@@ -398,15 +399,12 @@
 }
 
 .art .gallery {
-    
-
     position: relative;
-  
-    border-top: none;
-    padding: 7rem 5rem;
-    margin: 0 auto;
-    width: 50%;
-   
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 10rem;
+    justify-content: center;
+
 }
 
 .art .gallery img {
@@ -425,6 +423,7 @@
     transform: scale(1.1);
     border: 2px solid white;
 }
+
 
 .art .gallery img[data-year="2023"] {
     display: none;
